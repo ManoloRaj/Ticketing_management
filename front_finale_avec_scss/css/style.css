@@ -1,0 +1,344 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  color: rgba(46, 46, 46, 0.747);
+  /* Works on Chrome, Edge, and Safari */
+}
+body .scroll-black * {
+  scrollbar-width: thin;
+  scrollbar-color: #636363 auto;
+}
+body ::-webkit-scrollbar {
+  width: 7px;
+  background-color: #dddddd;
+}
+body ::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid #e2e2e2;
+  border-radius: 50px;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #adadad;
+  border-radius: 50px;
+}
+
+.big_container {
+  display: grid;
+  grid-template-columns: 23% auto;
+}
+.big_container .left {
+  background: #e9e9e9;
+  height: 100vh;
+  box-shadow: 4px 5px 10px #9b9b9b;
+  z-index: 1;
+}
+.big_container .left .title_container {
+  display: grid;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+.big_container .left .title_container .title {
+  margin: 20px;
+}
+.big_container .left .content {
+  padding: 30px;
+}
+.big_container .left .content .ajout_ticketing {
+  padding: 30px;
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(204, 204, 204, 0.486), rgba(177, 177, 177, 0.815));
+  box-shadow: -1px 2px 10px grey;
+}
+.big_container .left .content .ajout_ticketing .description label {
+  margin-top: 10px;
+}
+.big_container .left .content .ajout_ticketing .description input {
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 85%;
+  box-shadow: 2px 2px 2px grey;
+}
+.big_container .left .content .ajout_ticketing .categorie {
+  margin-top: 10px;
+}
+.big_container .left .content .ajout_ticketing .categorie select {
+  margin-top: 10px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 89%;
+  box-shadow: 2px 2px 2px grey;
+}
+.big_container .left .content .ajout_ticketing button {
+  margin-top: 20px;
+  width: 89%;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #d40000;
+  font-size: 14px;
+}
+.big_container .right {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+.big_container .right .navbar {
+  height: 70px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 90% auto;
+  background-image: linear-gradient(rgba(0, 195, 255, 0.658), rgba(0, 162, 211, 0.822));
+  margin-bottom: 9px;
+  box-shadow: 2px 5px 5px rgba(102, 102, 102, 0.644);
+  color: white;
+}
+.big_container .right .navbar h2 {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.big_container .right .navbar .filter {
+  display: grid;
+  grid-template-columns: auto 20%;
+}
+.big_container .right .download_icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 7%;
+  top: 17%;
+  border-radius: 100px;
+  transition: 1s;
+}
+.big_container .right .download_icon:hover {
+  position: absolute;
+  top: 16%;
+}
+.big_container .right .notification_icon {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  position: absolute;
+  right: 11%;
+  top: 17%;
+  border-radius: 100px;
+  transition: 1s;
+}
+.big_container .right .notification_icon:hover {
+  position: absolute;
+  top: 16%;
+}
+.big_container .right .all_ticketing_container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  margin: 50px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+.big_container .right .all_ticketing_container .ticketing_container {
+  padding: 20px;
+}
+.big_container .right .all_ticketing_container .ticketing_container .titre_tache h2 {
+  font-size: 20px;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache {
+  overflow-y: scroll;
+  height: 62vh;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.548);
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item {
+  background-color: rgba(241, 241, 241, 0.63);
+  border: solid white 1px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(75, 75, 75, 0.534);
+  transition: 0.5s;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .title {
+  color: rgba(34, 34, 34, 0.747);
+  font-weight: bold;
+  font-size: 19px;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .title .statut_en_cours {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fbff00;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .title .statut_fini {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #00bb00;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .description {
+  margin-top: 10px;
+  text-align: left;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .date_envoi {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  text-align: right;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item .envoyeur {
+  text-align: right;
+  font-size: 13px;
+}
+.big_container .right .all_ticketing_container .ticketing_container .liste_tache a .ticketing_item:hover {
+  background-color: white;
+}
+.big_container .right .container_ticket_detail {
+  background-color: white;
+  box-shadow: 2px 1px 10px #dfdfdf;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin: 5% 20% 0 20%;
+  height: 70vh;
+  padding: 25px;
+  overflow-y: scroll;
+}
+.big_container .right .container_ticket_detail .title {
+  padding: 20px;
+  display: inline-block;
+  color: #1d1d1d;
+  font-size: 20px;
+  font-weight: bold;
+}
+.big_container .right .container_ticket_detail .title .texte {
+  color: rgba(29, 29, 29, 0.76);
+  font-size: 15px;
+  font-weight: lighter;
+}
+.big_container .right .container_ticket_detail .details {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.big_container .right .container_ticket_detail .details .container_left {
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 1s;
+}
+.big_container .right .container_ticket_detail .details .container_left .titre {
+  color: #292929;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.big_container .right .container_ticket_detail .details .container_left .responsable {
+  margin-top: 10px;
+}
+.big_container .right .container_ticket_detail .details .container_left .responsable select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.big_container .right .container_ticket_detail .details .container_left .affectation {
+  margin-top: 10px;
+}
+.big_container .right .container_ticket_detail .details .container_left .affectation select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.big_container .right .container_ticket_detail .details .container_left .piece_jointe input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.big_container .right .container_ticket_detail .details .container_left .commentaire input {
+  width: 90%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+}
+.big_container .right .container_ticket_detail .details .container_left:hover {
+  background-color: rgba(228, 228, 228, 0.637);
+  padding: 26px;
+}
+.big_container .right .container_ticket_detail .details .container_right .up {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+  transition: 1s;
+}
+.big_container .right .container_ticket_detail .details .container_right .up .file_container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  width: 100%;
+}
+.big_container .right .container_ticket_detail .details .container_right .up .file_container a .image_piece_jointe {
+  margin-top: 5px;
+  border: solid #f3f3f3 1px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/file_icon.png");
+  background-size: cover;
+  transition: 1s;
+}
+.big_container .right .container_ticket_detail .details .container_right .up .file_container a .image_piece_jointe:hover {
+  background: #75d4ec;
+}
+.big_container .right .container_ticket_detail .details .container_right .up:hover {
+  background-color: rgba(228, 228, 228, 0.637);
+  padding: 26px;
+}
+.big_container .right .container_ticket_detail .details .container_right .down {
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+  transition: 1s;
+}
+.big_container .right .container_ticket_detail .details .container_right .down .titre {
+  display: grid;
+  grid-template-columns: 80% auto;
+}
+.big_container .right .container_ticket_detail .details .container_right .down .titre .text {
+  color: #292929;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.big_container .right .container_ticket_detail .details .container_right .down .titre .color {
+  width: 20px;
+  height: 20px;
+  background-color: #1df500;
+  border: 5px white solid;
+  border-radius: 100px;
+}
+.big_container .right .container_ticket_detail .details .container_right .down input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.big_container .right .container_ticket_detail .details .container_right .down:hover {
+  background-color: rgba(228, 228, 228, 0.637);
+  padding: 35px;
+}/*# sourceMappingURL=style.css.map */

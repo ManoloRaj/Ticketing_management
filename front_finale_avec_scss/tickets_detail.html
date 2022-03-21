@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_detail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big_container2">
+        <div class="left">
+
+            <div class="title_container">
+                <img src="assets/logo2.jpg" class="" style="width: 100%;">
+                <div class="title"> Ticketing FID</div>
+            </div>
+            <div class="content">
+                <div class="ajout_ticketing">
+                    <h3>Ajoutez un ticketing</h2>
+                        <div class="description">
+                            <label for="code">Code ticketing</label><br>
+                            <input type="text" placeholder="Code ticketing"/>
+                        </div>
+                        <div class="description">
+                            <label for="description">Description</label><br>
+                            <input type="text" placeholder="Description"/>
+                        </div>
+                        <div class="categorie">
+                            <label for="categorie">Catégorie</label><br>
+                            <select name="categorie" >
+                                <option value="first" selected>MIS</option>
+                                <option value="second" >Second Value</option>
+                                <option value="third">Third Value</option>
+                            </select>
+                        </div>
+                        <button>Envoyer le ticket</button>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <div class="filter">
+                    <h2>Detail du ticket </h2>
+                    <select name="categorie" style="border: none;padding: 5px;border-radius: 5px; margin-left:10px;height: 50px;margin-top: 5px;">
+                        <option value="first" selected>Tout</option>
+                        <option value="second" >En cours</option>
+                        <option value="third">Nouveau</option>
+                        <option value="third">Cloturé</option>
+                    </select>
+                    
+                </div>
+               
+            </div>
+
+            
+            <div class="container_ticket_detail">
+                <a href="home.html">
+                    <div class="back_button">
+                        <
+                    </div>
+                </a>
+                
+                <div class="title">
+                    <div>Ticket : 
+                        <div class="texte">Problème au niveau du...</div>
+                    </div>
+                    
+                    <div>du 
+                        <div class="texte">20-05-2021</div>
+                    </div> 
+                    <div>Posté par 
+                        <div class="texte">Manolo Rajaonah</div></div>
+                </div>
+                <div class="details">
+
+                    <div class="container_left" >
+                        <div class="titre">
+                            Observation du ticket
+                        </div>
+
+                        <div class="commentaire" style="margin-top: 10px;">
+                            <label for="commentaire">Commentaire</label><br>
+                            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="responsable" style="margin-top: 10px;">
+                            <label for="nom_responsable">Affecter a une personne</label><br>
+                            <select name="nom_responsable" id="">
+                                <option>Rien</option>
+                                <option>Manolo Rajaonah</option>
+                            </select>
+                        </div>
+
+                        <div class="affectation" style="margin-top: 10px;">
+                            <label for="nom_affectation">Affecter a un entité</label><br>
+                            <input type="text" name="nom_responsable" >
+                        </div>
+
+                        <div class="piece_jointe" style="margin-top: 10px;">
+                            <label for="nom_piece_jointe">Ajoutez pièce piece_jointe</label><br>
+                            <input type="file" placeholder="" name="nom_piece_jointe" >
+                            
+                        </div>
+
+                        
+                    </div>
+
+
+
+                    <div class="container_right">
+
+                        <div class="up">
+                            <div>
+                                <div style="margin-top: 10px;"><strong>Responsable : </strong> Rajaonah Manolo</div> 
+                                <div style="margin-top: 10px;"><strong>Date : </strong>20-05-2020</div>
+                                <div style="margin-top: 10px;"><strong>Commentaires :</strong>
+                                    <br>
+                                    
+                                    
+                                </div>
+                                
+                                <div class="commentaire_container">
+                                    
+                                    <div class="commentaire_item">
+                                        <div class="commentaire_right">
+                                            Voici un commentaire
+                                        </div>
+                                        <div class="commentaire_left">
+                                            20-02-2020 15:45
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="commentaire_item">
+                                        <div class="commentaire_right">
+                                            Voici un commentaire
+                                        </div>
+                                        <div class="commentaire_left">
+                                            20-02-2020 15:45
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="commentaire_item">
+                                        <div class="commentaire_right">
+                                            Voici un commentaire comme on l'a vue tout a l'heure
+                                        </div>
+                                        <div class="commentaire_left">
+                                            20-02-2020 15:45
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="commentaire_item">
+                                        <div class="commentaire_right">
+                                            Voici un commentaire
+                                        </div>
+                                        <div class="commentaire_left">
+                                            20-02-2020 15:45
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+
+                                <div class="file_container" style="margin-top: 10px;">
+                                    Fichier joints
+                                    <a href="">
+                                        <div class="image_piece_jointe" style="">
+                                        
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="image_piece_jointe" style="">
+                                        
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                                
+                                
+                               
+                            </div>
+                            
+                        </div>
+
+                        <div class="down">
+                            <div class="titre">
+                                <div class="text">Ticket en traitement</div>
+                                <div  class="color"></div>
+                            </div>
+                            <input type="submit" value="Enregistrer" style="
+                                                                            background: rgb(216, 0, 0);">
+                            <input type="submit" value="Cloturer" style="
+                                                                            background: rgb(0, 184, 216);">
+                            <input type="submit" value="Quitter" style="
+                                                                            background: rgb(37, 37, 37);">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    
+    
+</body>
+</html>

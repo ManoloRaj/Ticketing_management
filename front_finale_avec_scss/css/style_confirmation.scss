@@ -1,0 +1,280 @@
+body{
+    font-size: 16px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin:0;
+    color: rgba(46, 46, 46, 0.747);
+
+    /* Works on Chrome, Edge, and Safari */
+    ::-webkit-scrollbar {
+        width: 7px;
+        
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        border: 1px solid rgb(226, 226, 226);
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color:rgb(173, 173, 173);
+        border-radius: 50px;
+    }
+
+
+
+}
+.big_container2{
+    display: grid;
+    grid-template-columns: 0% auto;
+
+    .left{
+        background: rgb(233, 233, 233);
+        height: 100vh;
+        box-shadow: 4px 5px 10px rgb(155, 155, 155);
+        z-index: 1;
+        
+        .title_container{
+
+            display: none;
+            font-size: 30px;
+            font-weight:bold;
+            margin: 5px;
+            .title{
+                margin:20px;
+            }
+        }
+        .content{
+            display: none;
+            padding: 30px;
+            .ajout_ticketing{
+                padding : 30px;
+                border-radius: 5px;
+                background-image: linear-gradient(rgba(204, 204, 204, 0.486), rgba(177, 177, 177, 0.815));
+                box-shadow: -1px 2px 10px grey;
+                .description{
+                    label{
+                        margin-top: 10px;
+                    }
+                    input{
+                        margin-top: 10px;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                         margin-left:10px;
+                         width: 85%;
+                         box-shadow: 2px 2px 2px grey;
+                    }
+                }
+                .categorie{
+                    margin-top: 10px;
+                    select{
+                        margin-top: 10px;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 5px;
+                         margin-left:10px;
+                         width:89%;
+                         box-shadow: 2px 2px 2px grey;
+                    }
+                   
+                }
+                button{
+                    margin-top: 20px; 
+                    width: 89%; 
+                    padding: 10px;
+                    margin-left:10px; 
+                    border:none;
+                    border-radius: 5px;
+                    color:white;
+                    background-color: rgb(212, 0, 0);
+                    font-size: 14px;
+                }
+                
+            }
+        }
+        
+    }
+    .right{
+        background-color: rgb(245, 245, 245);
+        .navbar{
+            
+            h2{
+                margin-left: 50px;
+                margin-top:15px;
+            }
+            height: 70px;
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: 90% auto;
+            background-image: linear-gradient(rgba(0, 195, 255, 0.658),rgba(0, 162, 211, 0.822));
+            margin-bottom: 9px;
+            box-shadow: 2px 5px 5px rgba(102, 102, 102, 0.644);
+            color: white;
+            .filter{
+                
+            display: grid;
+            grid-template-columns: auto 20%;
+                
+            }
+        }
+
+        .download_icon{
+
+            padding: 5px;
+            background-color: rgb(0, 177, 24);
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            position:absolute;
+            right: 7%;
+            top:15%;
+            border-radius: 100px;
+            transition:1s;
+        }
+        .download_icon:hover{
+            background-color: rgb(31, 236, 59);
+            position:absolute;
+            right: 7%;
+            top:16%;
+        }
+        .all_ticketing_container{
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: calc(100% * 1/3) calc(100% * 1/3) calc(100% * 1/3);
+            margin: 50px;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 5px;
+            margin-top: 70px;
+
+            
+            .ticketing_container{
+            
+                padding : 20px;
+                
+                .titre_tache{
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+                .liste_tache{
+                    overflow-y: scroll;
+                    height:62vh;
+                    a{
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.548);
+
+                        .ticketing_item{
+                            background-color: rgba(241, 241, 241, 0.63);
+                            border: solid rgb(255, 255, 255) 1px;
+                            border-radius: 5px;
+                            margin: 20px;
+                            padding: 20px;
+                            box-shadow: 0px 0px 10px rgba(75, 75, 75, 0.534);
+                            transition:0.5s;
+                            .title{
+                                color: rgba(34, 34, 34, 0.747);
+                                font-weight: bold;
+                                font-size: 19px;
+                                .statut_en_cours{
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 15px;
+                                    border: none;
+                                    border-radius: 20px;
+                                    background-color: rgb(251, 255, 0);
+                                }
+                                .statut_fini{
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 15px;
+                                    border: none;
+                                    border-radius: 20px;
+                                    background-color: rgb(0, 187, 0);
+                                }
+                            }
+                            .description{
+                                margin-top:10px;
+                                text-align: left;
+                            }
+                            .date_envoi{
+                                margin-top: 10px;
+                                font-style: italic;
+                                font-size:14px;
+                                text-align: right;
+                            }
+                            .envoyeur{
+                                text-align: right;
+                                font-size:13px;
+                            }
+                        }
+                        .ticketing_item:hover{
+                            background-color: white;
+                        }
+                    }
+                }
+                
+                
+            }
+
+        }
+
+        .back_button{
+            background-color: rgba(184, 184, 184, 0.651);
+            position:fixed;
+            margin-top: -40px;
+            margin-left: 10px;
+            border-radius: 5px;
+            padding: 15px;
+            transition:1s;
+            color: rgb(255, 255, 255);
+            height: 22px;
+        }
+        .back_button:hover{
+            background-color: rgba(136, 136, 136, 0.945);
+
+        }
+
+        .container_ticket_detail{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 2px 1px 10px rgb(223, 223, 223);
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 10px;
+            margin : 5% 20% 0 20%;
+            height: 40vh;
+            padding : 25px;
+            padding-top:50px;
+            .title{
+                padding: 20px;
+                display: inline-block;
+                color: rgb(29, 29, 29);
+                font-size : 20px;
+                font-weight: bold;
+                .texte{
+                    color: rgba(29, 29, 29, 0.76);
+                    font-size : 15px;
+                    font-weight: lighter;
+                }
+            }
+            .bouton_confirmation{
+                width: 100%;
+                display: grid;
+                grid-row: auto;
+                a{
+                    margin: 5px;
+                    border:  solid 1px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    color: white;
+                    background-image: linear-gradient(rgba(0, 195, 255, 0.658), rgba(0, 162, 211, 0.822));
+                    padding: 10px;
+                    text-align: center;
+                }  
+            }
+            
+        }
+        
+    }
+
+
+}

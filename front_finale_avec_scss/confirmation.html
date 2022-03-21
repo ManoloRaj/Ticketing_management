@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_confirmation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big_container2">
+        <div class="left">
+
+            <div class="title_container">
+                <img src="assets/logo2.jpg" class="" style="width: 100%;">
+                <div class="title"> Ticketing FID</div>
+            </div>
+            <div class="content">
+                <div class="ajout_ticketing">
+                    <h3>Ajoutez un ticketing</h2>
+                        <div class="description">
+                            <label for="code">Code ticketing</label><br>
+                            <input type="text" placeholder="Code ticketing"/>
+                        </div>
+                        <div class="description">
+                            <label for="description">Description</label><br>
+                            <input type="text" placeholder="Description"/>
+                        </div>
+                        <div class="categorie">
+                            <label for="categorie">Catégorie</label><br>
+                            <select name="categorie" >
+                                <option value="first" selected>MIS</option>
+                                <option value="second" >Second Value</option>
+                                <option value="third">Third Value</option>
+                            </select>
+                        </div>
+                        <button>Envoyer le ticket</button>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="navbar">
+                <div class="filter">
+                    <h2>Detail du ticket </h2>
+                    <select name="categorie" style="border: none;padding: 5px;border-radius: 5px; margin-left:10px;height: 50px;margin-top: 5px;">
+                        <option value="first" selected>Tout</option>
+                        <option value="second" >En cours</option>
+                        <option value="third">Nouveau</option>
+                        <option value="third">Cloturé</option>
+                    </select>
+                    
+                </div>
+               
+            </div>
+
+            
+            <div class="container_ticket_detail">
+                <a href="home.html">
+                    <div class="back_button">
+                        <
+                    </div>
+                </a>
+                
+                <div class="title">
+                    <div>Ticket : 
+                        <div class="texte">Problème au niveau du...</div>
+                    </div>
+                    
+                    <div>du 
+                        <div class="texte">20-05-2021</div>
+                    </div> 
+                    <div>Posté par 
+                        <div class="texte">Manolo Rajaonah</div></div>
+                </div>
+                <div class="bouton_confirmation">
+                    <a href="tickets_detail.html" > Confirmation de prise du ticket<br>
+                    <a href="home.html" style=" background-image: linear-gradient(rgba(255, 0, 0, 0.658), rgba(211, 0, 0, 0.822));"> Annuler et revenir a la liste</a>
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+    
+    
+    
+</body>
+</html>
